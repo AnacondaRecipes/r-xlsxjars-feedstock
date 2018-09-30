@@ -26,6 +26,7 @@ build:
 requirements:
   build:
     - {{posix}}zip               # [win]
+    - openjdk                    # [win]
 
   host:
     - r-base
@@ -36,6 +37,8 @@ requirements:
     - r-rjava
 
 test:
+  requires:
+    - openjdk                    # [win]
   commands:
     # You can put additional test commands to be run here.
     - $R -e "library('xlsxjars')"           # [not win]
