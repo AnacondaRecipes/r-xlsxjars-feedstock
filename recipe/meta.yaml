@@ -32,12 +32,12 @@ requirements:
   host:
     - r-base
     - r-rjava
-    - r-openjdk
+    - openjdk
 
   run:
     - r-base
     - r-rjava
-    - r-openjdk
+    - openjdk
 
 test:
   requires:
